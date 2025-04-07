@@ -1,4 +1,5 @@
 
+document.addEventListener('DOMContentLoaded', () => {
 let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 let fizzBuzz = [];
 const fizzBuzzResult = document.getElementById('fizzBuzzResult');
@@ -18,10 +19,12 @@ for (let i = 1; i <= answer; i++) {
 };
 
 console.log(fizzBuzz);
+
 fizzBuzzResult.textContent = fizzBuzz;
 
 function showExplanation() {
-  return  fizzBuzzExplanation.textContent = "If number is divisible by 3, print Fizz. If number is divisible by 5, print Buzz. If it is divisible by both, print FizzBuzz. "
-}
+  return  fizzBuzzExplanation.textContent = "If number is divisible by 3, print Fizz. If number is divisible by 5, print Buzz. If it is divisible by both, print FizzBuzz. ";
+};
 
-explanationBtn.addEventListener('click', showExplanation)
+explanationBtn.addEventListener('click', showExplanation);
+});
